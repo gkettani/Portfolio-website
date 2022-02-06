@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+:root{
+    --ff-primary: 'Titillium Web', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    --clr-primary-1: #111111;
+    --clr-primary-2: #191919;
+    --clr-primary-3: #2E2E2E;
+    --clr-secondary: #F7C744;
+    --clr-tertiary: rgb(43, 40, 40);
+    --clr-text: #EAEAEA;
+}
+
+.second-clr{
+    color: var(--clr-secondary);
+}
+
+.third-clr{
+    color: var(--clr-tertiary);
+}
+
+.grey-clr{
+    color: var(--clr-text);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove link styles on a elements */
+a {
+  text-decoration: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+  background-color: #111111;
+  height: 1500px;
+}
+
+/*=============================
+         Header section
+===============================*/
+.main-header{
+    justify-content: space-between;
+    padding: 0 120px 0 20px;
+    width: 100%;
+    height: 90px;
+    font-family: var(--ff-primary);
+    background: var(--clr-primary-1);
+}
+
+/*  theme-btn -------------------------------- */
+.theme-btn{
+  font-size: 1.6em;
+  padding: .2em .3em;
+  border-radius: .6rem;
+  border-color: rgba(0, 0, 0, 0);
+  transition: all .4s;
+  background-color: var(--clr-text);
+  color: #111111;
+  margin: 50px 100px;
+}
+
+.theme-btn:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--clr-text);
+  border: 2px solid var(--clr-text);
+  cursor: pointer;
+}
+
+
+/*  Nav -------------------------------- */
+.list-link{
+    font-family: var(--ff-primary);
+    color: var(--clr-text);
+    font-weight: 600;
+    margin: .8em;
+    transition: all .1s;
+    position: relative;
+}
+
+.list-link:hover,
+.list-link:focus{
+    cursor: pointer;
+    border-bottom: 2px solid var(--clr-text);
+}
+
+.nav__container{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.selected-item::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--clr-text);
+}
+
+.selected-item:hover,
+.selected-item:focus{
+    border: none;
+}
+
+/*=============================
+         Hero section
+===============================*/
+
+.hero-bg{
+  background: url("../img/hero_bg1.png");
+  
+  background-size: 100% 100%;
+  width: 100%;
+  border-top: 1px solid rgba(250, 250, 250, 0.3);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.3);
+}
+
+.grid{
+  display: grid;
+  grid-template-areas: "a b" "a c" ;
+  width: 85%;
+  max-width: 1300px;
+  margin: 100px auto;
+  gap: 5%;
+}
+
+.grid__item{
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(150, 150, 150, 0.1);
+  backdrop-filter: blur(3.2px);
+  -webkit-backdrop-filter: blur(3.2px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.hero__bio-container{
+  height: 500px;
+  grid-area: a;
+  max-width: 950px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__sec-container{
+  height: 230px;
+  grid-area: b;
+}
+
+.hero__third-container{
+  height: 230px;
+  grid-area: c;
+}
+
+/* Styling grid items  -------------------------------------------------*/
+.grid__item__style{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+
+.grid__item__style__child{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.grid__item__style__child--red{
+  left: 20px;
+  background-color: #FC6058;
+}
+
+.grid__item__style__child--yellow{
+  left: 40px;
+  background-color: #FEC02F;
+}
+.grid__item__style__child--green{
+  left: 60px;
+  background-color: #2ACA3E;
+}
+
+/* ----------------------------------------------------------------------*/
+
+
+/* Bio section --------------------------------*/
+.grid__item__content{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-shadow: 0 3px 15px 8px rgba(0, 0, 0, 0.4);
+}
+
+.name-label{
+  color: var(--clr-text);
+  font-family: var(--ff-primary);
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.status-label{
+  color: rgba(255, 255, 255, .6);
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  text-transform: wrap;
+  width: 150px;
+  line-height: 1.3rem;
+}
+
+.description-text{
+  margin: 40px 0;
+  width: 80%;
+  color: white;
+}
