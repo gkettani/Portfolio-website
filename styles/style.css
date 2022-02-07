@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 
 :root{
     --ff-primary: 'Titillium Web', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
+    --ff-tertiary: 'Rubik', sans-serif;
     --clr-primary-1: #202426;
     --clr-primary-2: #323232;
     --clr-primary-3: #565956;
@@ -70,6 +72,9 @@ dl,
 dd {
   margin: 0;
 }
+a{
+  color: var(--clr-text-1);
+}
 
 /*=============================
          General modifier
@@ -89,11 +94,16 @@ body{
 }
 
 p::selection,
+h1::selection,
 h3::selection,
 h2::selection,
+h4::selection,
+h5::selection,
+h6::selection,
 a::selection,
 img::selection,
-br::selection{
+br::selection,
+span::selection{
   background-color: var(--clr-text-1);
   color: var(--clr-primary-1);
 }
@@ -287,15 +297,16 @@ br::selection{
   cursor: pointer;
 }
 
-/*=============================
+/*============================================
         Projects preview section
-===============================*/
+==============================================*/
 .project-preview-section{
   /* Container */
   margin: 130px 0; 
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   min-width: 650px;
+  max-width: 900px;
 }
 
 .project-preview_title-container{
@@ -356,9 +367,10 @@ br::selection{
 }
 
 
-/*=============================
+/*==========================================================
         Projects page
-===============================*/
+============================================================*/
+
 .projects-grid-container{
   width: 80%;
   max-width: 1200px;
@@ -373,41 +385,76 @@ br::selection{
   grid-template-columns: repeat( 3, 1fr);
   font-family: var(--ff-primary);
   color: var(--clr-text-1);
+  background-image: url("../img/projects_bg.svg");
+  background-size: contain;
+  background-position: 0 100px ;
+  background-repeat: no-repeat;
 }
-.projects-grid > h1{
+
+.projects-grid__title{
   margin: 25px;
   grid-column: span 3;
 }
 
 .project-card{
   margin: 5%;
-  height: 300px;
-  border: 1px solid rgba(255, 255, 255, .15);
-  border-radius: .8em;
+  height: 350px;
   overflow: hidden;
   position: relative;
+  background: rgba(50, 50, 50, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgba(85, 85, 85, 0.3);
 }
 
 .project-card__img-container{
   width: 100%;
-  height: 65%;
+  height: 60%;
   background-color: #2ACA3E;
-  border-radius: .8em;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-.project-card__icon-container{
-  width: 50px;
-  height: 50px;
-  background-color: var(--clr-text-1);
-  position: absolute;
-  top: 53%;
-  left: 10%;
-  border-radius: .8em;
+.card__img{
+  transition: all 2s;
+}
+
+.card__img:hover{
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .project-card__title{
   margin: 20px;
 }
+
+.project-card__languages-labels span{
+  margin-left: 5%;
+  padding: .1em .5em;
+  color: var(--clr-primary-1);
+  font-size: .9em;
+  font-family: var(--ff-tertiary);
+  border-radius: .7em;
+}
+
+.language-label--red{
+  background-color: #FA7268;
+}
+
+.language-label--blue{
+  background-color: #477DCF;
+}
+
+.language-label--yellow{
+  background-color: #FEC02F;
+}
+
+.language-label--green{
+  background-color: #2ACA3E;
+}
+
 /*=============================
         Footer
 ===============================*/
