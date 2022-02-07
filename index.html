@@ -13,15 +13,15 @@
         </div>
         <nav class="nav">
             <ul class='container'>
-                <li><a href="#"  class="list-link selected-item">Home</a></li>
-                <li><a href="#" class="list-link">About</a></li>
-                <li><a href="#" class="list-link">Projects</a></li>
+                <li><a href="./index.html"  class="list-link selected-item">Home</a></li>
+                <li><a href="./about.html" class="list-link">About</a></li>
+                <li><a href="./project.html" class="list-link">Projects</a></li>
             </ul>
         </nav>
     </header>
     <div>
-        <main role="main" class="container">
-            <div class="hero-bg container">
+        <main role="main" class="container home-main">
+            <div class="hero-bg">
                 <div class="hero-grid">
                     <div class="hero__bio-container grid__item container">
                         <div class="grid__item__style">
@@ -34,15 +34,19 @@
                                 <img src="./img/profile.png" alt="profile picture" class="profile-image_image">
                             </div>
                             <div class="bio_name-label">
-                                Ghali Kettani
+                                <p>Ghali Kettani</p>
                             </div>
                             <div class="bio_status-label">
-                                Computer Science Student
+                                <p>Computer Science Student</p>
                             </div>
                             <div class="bio_description-text">
-                                <p>Hi, I’m a computer science student from Lyon, France. I have a deep interest in ...., 
-                                    currently learning new stuff and expending my knowledge, enjoy learning....
-                                    This website is to showcase all of that to you.</p>
+                                <p>Hi, I’m Ghali, a computer science student from Lyon, France. I have a deep interest in full-stack development,
+                                     machine learning, Blockchain and everything in between. 
+                                    I enjoy learning new development techniques and new technologies related to computer science.
+                                    My main hobby is to expand my programming knowledge by learning new languages and coding 
+                                    all kinds of things : Games, softwares, websites etc... 
+                                    This website brings together some personal projects I have worked on the last few months.                                    
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -52,7 +56,9 @@
                             <div class="grid__item__style__child grid__item__style__child--yellow"></div>
                             <div class="grid__item__style__child grid__item__style__child--green"></div>
                         </div>
-                        <button class="theme-btn"><i class="uil uil-brightness-low"></i></button>
+                        <button class="btn theme-btn"><i class="uil uil-brightness-low"></i></button>
+                        <a href="https://github.com/gkettani" target="_blank"><button class="btn"><i class="uil uil-github"></i></button></a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank"><button class="btn"><i class="uil uil-linkedin-alt"></i></i></button></a>
                         <p></p>
                     </div>
                     <div class="hero__third-container grid__item container">
@@ -64,6 +70,52 @@
                     </div>                
                 </div>
             </div>
+            <div class="project-preview-section container">
+                <div class="project-preview_title-container">
+                    <h2> Featured Projects</h2>
+                    <p>A collection of some side projects that have shipped recently </p>
+                </div>
+                <div class="project-preview_container container">
+                    <div class="project-icon-container">
+                        <img src="./img/preject1_icon.png">
+                    </div>
+                    <div class="project-description-container">
+                        <h3> Clash of Clans</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse
+                        </p>
+                        <span> <a class="project-link">READ MORE ON CLASH OF CLANS &#10140;</a></span>
+                    </div>
+                </div>
+                <div class="project-preview_container container">
+                    <div class="project-icon-container">
+                        <img src="./img/project2_icon.png" width="100%" height="100%">
+                    </div>
+                    <div class="project-description-container">
+                        <h3> Clash Royal</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse 
+                        </p>
+                        <span> <a class="project-link">READ MORE ON CLASH ROYAL &#10140;</a></span>
+                    </div>     
+                </div>
+                <div class="project-preview_container container">
+                    <div class="project-icon-container"></div>
+                    <div class="project-description-container">
+                        <h3> Design Vault</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse
+                        </p>
+                        <span> <a class="project-link">READ MORE ON DESIGN VAULT &#10140;</a></span>
+                    </div>
+                </div>
+            </div>
         </main>
+        <footer class="container">
+            <p>Built and designed by Ghali Kettani </br>&#169; 2022 - All Rights Reserved</p>
+        </footer>
     </div>
 </body>

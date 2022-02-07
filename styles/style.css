@@ -5,7 +5,7 @@
     --ff-primary: 'Titillium Web', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
     --clr-primary-1: #202426;
-    --clr-primary-2: #3B3F40;
+    --clr-primary-2: #323232;
     --clr-primary-3: #565956;
     --clr-secondary-1: #72736F;
     --clr-secondary-2: #A4A69C;
@@ -82,7 +82,20 @@ dd {
 
 body{
   background-color: var(--clr-primary-1);
-  height: 1500px;
+}
+
+.home-main{
+  flex-direction: column;
+}
+
+p::selection,
+h3::selection,
+h2::selection,
+a::selection,
+img::selection,
+br::selection{
+  background-color: var(--clr-text-1);
+  color: var(--clr-primary-1);
 }
 
 /*=============================
@@ -149,10 +162,10 @@ body{
 
 .hero-grid{
   display: grid;
-  grid-template-areas: "a b" "a c" ;
+  grid-template-columns: 2fr 1fr;
   width: 85%;
   max-width: 1300px;
-  margin: 190px auto;
+  margin: 150px auto;
   gap: 5%;
 }
 
@@ -169,19 +182,22 @@ body{
 .hero__bio-container{
   /* Container */
   padding: 80px 0;
-  grid-area: a;
+  grid-row: span 2;
   max-width: 950px;
   flex-direction: column;
+  position: relative;
 }
 
 .hero__sec-container{
   /* Container */
-  grid-area: b;
+  position: relative;
+  gap: 15px;
 }
 
 .hero__third-container{
   /* Container */
-  grid-area: c;
+  position: relative;
+  color: green;
 }
 
 /* Styling grid items  -------------------------------------------------*/
@@ -254,7 +270,7 @@ body{
 }
 
 /*  theme-btn -------------------------------- */
-.theme-btn{
+.btn{
   font-size: 1.6em;
   padding: .2em .3em;
   border-radius: .6rem;
@@ -262,12 +278,149 @@ body{
   transition: all .6s;
   background-color: var(--clr-tertiary);
   color: var(--clr-primary-1);
-  margin: 50px 100px;
 }
 
-.theme-btn:hover{
+.btn:hover{
   background-color: rgba(0, 0, 0, 0);
   color: var(--clr-tertiary);
   border: 2px solid var(--clr-tertiary);
   cursor: pointer;
+}
+
+/*=============================
+        Projects preview section
+===============================*/
+.project-preview-section{
+  /* Container */
+  margin: 130px 0; 
+  flex-direction: column;
+  width: 50%;
+  min-width: 650px;
+}
+
+.project-preview_title-container{
+  font-family: var(--ff-primary);
+  align-self: flex-start;
+  padding: .6rem;
+  line-height: 2.2rem;
+  font-size: 1.1rem;
+  color: var(--clr-text-1);
+}
+
+.project-preview_title-container p{
+  color: var(--clr-text-2);
+}
+
+.project-preview_container{
+  background-color: var(--clr-primary-2);
+  margin: .8em;
+  width: 100%;
+  border: 1px solid rgba(150, 150, 150, .15);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, .15);
+  border-radius: .6rem;
+  align-items: flex-start;
+  padding: 30px 0;
+  gap: 30px;
+}
+
+.project-icon-container{
+  width: 70px;
+  height: 70px;
+  border-radius: 1.1rem;
+  background-color: white;  
+  overflow: hidden;
+}
+
+.project-description-container{
+  width: 80%;
+  color: var(--clr-text-1);
+  font-family: var(--ff-primary);
+}
+
+.project-description-container p{
+  margin-top: .5rem;
+  color: var(--clr-text-2);
+}
+
+.project-description-container span{
+  line-height: 2.5rem;
+  color: var(--clr-text-1);
+  font-weight: 600;
+  transition: all .2s;
+}
+
+.project-description-container span:hover{
+  color: white;
+  border-bottom: 2px solid var(--clr-text-1);
+  cursor: pointer;
+}
+
+
+/*=============================
+        Projects page
+===============================*/
+.projects-grid-container{
+  width: 80%;
+  max-width: 1200px;
+  min-width: 800px;
+  padding: 200px 0;
+  margin: auto;
+}
+
+.projects-grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat( 3, 1fr);
+  font-family: var(--ff-primary);
+  color: var(--clr-text-1);
+}
+.projects-grid > h1{
+  margin: 25px;
+  grid-column: span 3;
+}
+
+.project-card{
+  margin: 5%;
+  height: 300px;
+  border: 1px solid rgba(255, 255, 255, .15);
+  border-radius: .8em;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-card__img-container{
+  width: 100%;
+  height: 65%;
+  background-color: #2ACA3E;
+  border-radius: .8em;
+}
+
+.project-card__icon-container{
+  width: 50px;
+  height: 50px;
+  background-color: var(--clr-text-1);
+  position: absolute;
+  top: 53%;
+  left: 10%;
+  border-radius: .8em;
+}
+
+.project-card__title{
+  margin: 20px;
+}
+/*=============================
+        Footer
+===============================*/
+
+footer{
+  text-align: center;
+  font-family: var(--ff-primary);
+  color: var(--clr-text-1);
+  font-weight: 400;
+  font-size: 1.1rem;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(28, 28, 28)  ;
+  border-top: 1px solid rgba(255, 255, 255, .15);
+  box-shadow: 0 -3px 5px 1px rgba(0, 0, 0, .15);
 }
