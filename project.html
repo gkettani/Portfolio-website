@@ -1,15 +1,18 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="styles/style.css">
+    <script src= "index.js" charset="utf-8"></script>
     <title> Ghali's Website </title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link id="theme-color" rel="stylesheet" type="text/css" href=""/>
 </head>
 <body>
     <header class="container main-header">
         <div class="logo-container">
-            <a href="./index.html"><img src='./img/Logo.png' alt='logo icon' width="80px"></a>
+            <a href="./index.html"><img src='./assets/img/Logo.png' alt='logo icon' width="80px"></a>
         </div>
         <nav class="nav">
             <ul class='container'>
@@ -19,28 +22,39 @@
             </ul>
         </nav>
     </header>
-    <main role="main">
+    <main id = "projects-page"role="main">
         <div class="projects-grid-container">
             <div class="projects-grid">
+                <img src = "./assets/img/projects_bg_dark.svg"  id="bg_shape" width="100%" height="100%">
                 <h1 class="projects-grid__title"> All Projects </h1>
+
                 <div class="project-card">
                     <div class="project-card__img-container">
-                        <a href="https://github.com/gkettani/multiplayer_poker"><img class="card__img"src="./img/poker_img.svg"  /></a>
+                        <a ><img class="card__img"src="./assets/img/calculator_img2.svg"/></a>
+                    </div>
+                    
+                    <h3 class="project-card__title"> <a>React Calculator App</a> </h3>
+                    <div class="project-card__languages-labels">
+                        <span class="language-label--light-blue">React</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__img-container">
+                        <a href="https://github.com/gkettani/multiplayer_poker"><img class="card__img"src="./assets/img/poker_img.svg"/></a>
                     </div>
                     <h3 class="project-card__title"> <a href="https://github.com/gkettani/multiplayer_poker">Multiplayer Poker</a> </h3>
                     <div class="project-card__languages-labels">
                         <span class="language-label--red">JAVA</span>
-                        <span class="language-label--blue">Python</span>
-                        <span class="language-label--green">C++</span>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-card__img-container">
-                        <a href="https://youtube.fr"><img class="card__img"src="./img/blackjack_img.svg"/></a>
+                        <a href="./Ninja-jump/src/index.html"><img class="card__img"src="./assets/img/ninja_img.svg"/></a>
                     </div>
                     
-                    <h3 class="project-card__title"> <a href="https://youtube.fr">Blackjack</a> </h3>
+                    <h3 class="project-card__title"> <a href="./Ninja-jump/src/index.html">Ninja Jump</a></h3>
                     <div class="project-card__languages-labels">
                         <span class="language-label--yellow">Javascript</span>
                     </div>
@@ -48,10 +62,10 @@
 
                 <div class="project-card">
                     <div class="project-card__img-container">
-                        <a href="https://youtube.fr"><img class="card__img"src="./img/project_img1.svg"/></a>
+                        <a href="./Blackjack/src/index.html"><img class="card__img"src="./assets/img/blackjack_img.svg"/></a>
                     </div>
                     
-                    <h3 class="project-card__title"> <a href="https://youtube.fr">Ninja Jump</a></h3>
+                    <h3 class="project-card__title"> <a href="./Blackjack/src/index.html">Blackjack</a> </h3>
                     <div class="project-card__languages-labels">
                         <span class="language-label--yellow">Javascript</span>
                     </div>
@@ -59,7 +73,7 @@
 
                 <div class="project-card">
                     <div class="project-card__img-container">
-                        <a href="https://youtube.fr"><img class="card__img"src="./img/project_img2.svg"/></a>
+                        <a href="https://youtube.fr"><img class="card__img"src="./assets/img/brick_img.svg"/></a>
                     </div>
                     
                     <h3 class="project-card__title"> <a href="https://youtube.fr">Brick breaker</a> </h3>
@@ -67,12 +81,12 @@
                         <span class="language-label--yellow">Javascript</span>
                     </div>
                 </div>
-
-               
+                
             </div>
         </div>
     </main>
     <footer class="container">
-        <p>Built and designed by Ghali Kettani </br>&#169; 2022 - All Rights Reserved</p>
+        <p>Built and designed by Ghali Kettani <br/>&#169; 2022 - All Rights Reserved</p>
     </footer>
 </body>
+</html>

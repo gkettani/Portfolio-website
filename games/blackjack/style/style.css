@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@700&display=swap');
+
+.game-board {
+    /* border: 2px solid black; */
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    background-image: url("../../img/Background1.png");
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    height: 7.5%;
+    background-color: #839868;
+    color:#3B462D;
+    font-family: 'Solway', serif;
+    font-size: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #54b499;
+}
+
+#start-btn{
+    position: absolute;
+    width: 16.4%;
+    left: 41.8%;
+    top: 43%;
+}
+
+/* control buttons (settings + betting)------------------- */
+.control-btn {
+    width: 3.125%;
+    height: 5.55%;
+    border-radius: 15px;
+    font-size: 30px;
+    color: #FFF;
+    background-color: rgba(131, 152, 104, 0.7);
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+
+.control-btn img{
+    display: block;
+    margin: auto;
+}
+
+#sound-btn {
+    position: absolute;
+    left: 91.2%;
+    top: 2.64%;
+}
+
+#screen-btn {
+    position: absolute;
+    right: 1.56%;
+    top: 2.64%;
+}
+
+/* bet control panel --------------------------------------- */
+
+#bet-btn {
+    position: absolute;
+    width: 15.4%;
+    left: 42.57%;
+    bottom: 15.83%;
+}
+.game-board:fullscreen #bet-coins{
+    font-size: 2vw;
+}
+
+.bet button{
+    height: 44.45%;
+}
+
+.bet{
+    font-family: 'Solway', serif;
+    font-size: 33px;
+    color: #E1EAD5; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12.5%;
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* ----------------------------------------------------------- */
+
+/* Playing buttons ------------------------------------------- */
+.play-btn {
+    position: absolute;
+    width: 8.2%;
+    height: 5.56%;
+    border-radius: 15px;
+    top: 83.34%;
+    font-size: 28px;
+    color: white;
+}
+
+.game-board:fullscreen .play-btn{
+    font-size: 2vw;
+}
+
+.play-btn:hover{
+    background-color: #54b499;
+}
+
+#stand-btn{
+    left: 68.9%;
+}
+
+#double-btn{
+    left: 78.67%;
+}
+
+#hit-btn{
+    left: 88.44%;
+}
+
+/* ----------------------------------------------------------- */
+
+
+/* points section -------------------------------------------- */
+.points{
+    position: absolute;
+    left: 24.97%;
+    width: 4.69%;
+    height: 8.33%;
+    border-radius: 15px;
+    background-color: #A6B98E;
+    color: #e8eee1;
+    font-family: 'Solway', serif;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board:fullscreen .points p{
+    font-size: 2.8vw;
+}
+
+#player-points{
+    top: 62.5%;
+}
+
+#dealer-points{
+    top: 19%;
+}
+/* ------------------------------------------------------ */
+
+/* main deck--------------------------------------------- */
+#main-deck{
+    width: 9.38%;
+    height: 27.1%;
+    position: absolute;
+    top: 35%;
+    left: 87.27%;
+    background: url('../../img/deck.svg');
+    background-size: 100% 100% ;
+    opacity: 0.85;
+}
+/* ----------------------------------------------------- */
+
+/* Coins section ----------------------------------------*/
+#player-coins{
+    position: absolute;
+    left: 3.9%;
+    top: 3.8%;
+    width: 13.36%;
+    height: 5.21%;
+    background-color: rgba(166, 185, 142, 0.8);
+    border-radius: 30px;
+    font-size: 25px;
+    font-family: 'Solway', serif;
+    color: #3B462D;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 13%;
+}
+
+#coin-icon{
+    width: 25.15%;
+    height: 114.67%;
+    background: url('../../img/money.svg');
+    background-size: 100% 100%;
+}
+
+.game-board:fullscreen #player-coins p{
+    font-size: 2vw;
+}
+
+/* ------------------------------------------------- */
+
+
+.invisible{
+    visibility: hidden;
+}
+
+.disabled-btn{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.card{
+    /* width: 113px;
+    height: 161px; */
+    width: 8.83%;
+    height: 22.36%;
+    position: absolute;
+    top: 35%;
+    left: 87.27%;
+    background-size: 100% 100%;
+    border-radius: 13px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
+.card:hover{
+    transform: scale(1.1);
+    z-index: 99;
+}
+
+#end-game{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#end-game p{
+    font-family: 'Solway', serif;
+    font-size: 70px;
+    color: #edf0e9;
+}

@@ -1,15 +1,19 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="styles/style.css">
+    <script src= "index.js" charset="utf-8"></script>
+
     <title> Ghali's Website </title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link id="theme-color" rel="stylesheet" type="text/css" href=""/>
 </head>
 <body>
     <header class="container main-header">
         <div class="logo-container">
-            <a href="./index.html"><img src='./img/Logo.png' alt='logo icon' width="80px"></a>
+            <a href="./index.html"><img src='./assets/img/Logo.png' alt='logo icon' width="80px"></a>
         </div>
         <nav class="nav">
             <ul class='container'>
@@ -19,10 +23,77 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main role="main" class="about-main-container container">
+        <div class="about__section container">
+            <img src="./assets/img/about_profile.svg" width="50%"/>
+            <h2>Profile</h2>
+            <p class="line-divider">
+                I'm a third-year computer science student and self-taught web developer based in Lyon, France.
+                I have a deep interest in full-stack development, machine learning, AI, Blockchain and everything in between. 
+                I’m passionate about solving problems and algorithms, building softwares, creating websites, and basically coding 
+                all kinds of stuff.  
+            </p>
+        </div>
 
+        <div class="about__section container about-education">
+            <img src="./assets/img/about_education.svg" width="40%"/>
+            <h2>Education</h2>
+            <div class="about-education__grid">
+                <span class="about-education__grid-item">INSA Lyon - France</span> 
+                <span class="about-education__grid-item">First year computer science department</span>
+                <span class="about-education__grid-item"> 2020 - 2024</span>
+                <span class="about-education__grid-item"> Lycée Pierre d'Ailly - France</span>
+                <span class="about-education__grid-item">Classes préparatoires* (Maths - Physics - engineering science)</span>
+                <span class="about-education__grid-item"> 2019 - 2020</span>
+            </div>
+            <p class="line-divider"> 
+                *Note: The French classes préparatoires are two year courses, 
+                equivalent to the first two years of an undergraduate degree, 
+                designed to prepare students for entry into top Universities. 
+            </p>
+        </div>
+
+        <div class="about__section container about-skills">
+            <img src="./assets/img/about_skills.svg" width="40%"/>
+            <h2>Technical Skills</h2>
+            <div>
+                <br/>
+                <h3>Programming</h3>
+                <p>
+                    Thorough knowledge of data structures and algorithms, software engineering principles, 
+                    and object-oriented programming using the following programming languages : <br/>
+                    <span>C/C++ :</span>  Thorough knowledge of syntax and fundamentals principles
+                    (Dynamic memory, great capability using the STL, stream manipulation, etc.)<br/>
+                    <span>JAVA :</span> Thorough knowledge of syntax and fundamentals principles
+                    (make a GUI, setup and handle severs, proficiency using main JAVA standard libraries, etc.)<br/>
+                    <span>Python :</span> Good knowledge of python basics <br/>
+                    <span>SQL :</span> Create a complex Database using Oracle's platform and carry out queries using 
+                    eventually PL/SQL<br/>
+
+                </p>
+                <br/>
+                <h3>Web Development</h3>
+                <p>
+                    <span>HTML5/CSS3 :</span> Thorough knowledge of HTML5 and CSS3
+                    and Web Development technics, create beatiful and modern websites, etc.<br/>
+                    <span>Javascript (ES6) :</span> A good knowledge of javascript basics,
+                    DOM manipulation to make dynamic websites, object-oriented programming<br/>
+                    <span class="underlined">Frameworks :</span><br/>
+                    <span>React :</span> Elementary knowledge<br/>
+                </p>
+                <br/>
+                <h3>Tools</h3>
+                <p>
+                    <span>Git</span><br/>
+                    <span>VScode</span><br/>
+                    <span>Linux</span><br/>
+                    <span>Figma</span><br/>
+                </p>
+            </div>
+        </div>
     </main>
     <footer class="container">
-        <p>Built and designed by Ghali Kettani </br>&#169; 2022 - All Rights Reserved</p>
+        <p>Built and designed by Ghali Kettani <br/>&#169; 2022 - All Rights Reserved</p>
     </footer>
 </body>
+</html>

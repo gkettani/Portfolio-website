@@ -1,0 +1,13 @@
+:root{
+    --clr-primary-1: #F2E0D0;
+    --clr-primary-2: #F2D9BB;
+    --clr-primary-3: #F2C3A7;
+    --clr-secondary: #FA7268;
+    --clr-secondary-2 :#C04E45;
+    --clr-text-1: #202426;
+    --clr-text-2: #302f2f ;   
+
+    --clr-header: #F2C3A7bb;
+    --clr-glass: rgba(150, 150, 150, 0.3);
+    --clr-hover: #F2C3A7;
+}
