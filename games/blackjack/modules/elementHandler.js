@@ -31,7 +31,7 @@ export default class elementHandler{
     }
 
     init(){
-        this.gameScreen.style.backgroundImage = 'url(../img/Background2.png)';
+        this.gameScreen.style.backgroundImage = 'url(/assets/blackjack/img/Background2.png)';
         this.minusBtn.classList.remove('invisible');
         this.plusBtn.classList.remove('invisible');
         this.betBtn.classList.remove('invisible');
@@ -114,8 +114,8 @@ export default class elementHandler{
     }
 
     changeSoundIcon(soundOn){
-        if (soundOn) this.soundIcon[0].src = '../img/sound.svg';
-        else this.soundIcon[0].src = '../img/soundOff.png';
+        if (soundOn) this.soundIcon[0].src = '/assets/blackjack/img/sound.svg';
+        else this.soundIcon[0].src = '/assets/blackjack/img/soundOff.png';
     }
 
 }

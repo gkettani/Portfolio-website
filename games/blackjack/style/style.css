@@ -5,7 +5,7 @@
     position: relative;
     width: 1280px;
     height: 720px;
-    background-image: url("../../img/Background1.png");
+    background-image: url("/assets/blackjack/img/Background1.png");
     background-size: 100% 100%;
     margin: 0 auto;
 }
@@ -163,7 +163,7 @@
     position: absolute;
     top: 35%;
     left: 87.27%;
-    background: url('../../img/deck.svg');
+    background: url('/assets/blackjack/img/deck.svg');
     background-size: 100% 100% ;
     opacity: 0.85;
 }
@@ -190,7 +190,7 @@
 #coin-icon{
     width: 25.15%;
     height: 114.67%;
-    background: url('../../img/money.svg');
+    background: url('/assets/blackjack/img/money.svg');
     background-size: 100% 100%;
 }
 

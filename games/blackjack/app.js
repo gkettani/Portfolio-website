@@ -5,8 +5,8 @@ import SoundEffect from './modules/soundEffects.js'
 let elements = new ElementHandler();
 let game = new Game(elements.gameScreen);
 let soundOn = true;
-let bgMusic = new SoundEffect('../audio/bm.mp3');
-let cardSoundEffect = new SoundEffect('../audio/cardFlip.mp3');
+let bgMusic = new SoundEffect('../../assets/blackjack/audio/bm.mp3');
+let cardSoundEffect = new SoundEffect('../../assets/blackjack/audio/cardFlip.mp3');
 
 function playerDrawCard(){ 
     /* when a player withdraw a card we add it to his cards array and

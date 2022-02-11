@@ -211,8 +211,8 @@ document.addEventListener('DOMContentLoaded', () =>{
         btn.style.visibility = "hidden";
         if ( !gameStarted)
         {
-            mySound = [new sound("../sounds/bounce1.mp3"), new sound("../sounds/bounce2.mp3"), 
-                        new sound("../sounds/bounce3.mp3"), new sound("../sounds/bounce4.mp3")];
+            mySound = [new sound("../../assets/ninja/sounds/bounce1.mp3"), new sound("../../assets/ninja/sounds/bounce2.mp3"), 
+                        new sound("../../assets/ninja/sounds/bounce3.mp3"), new sound("../../assets/ninja/sounds/bounce4.mp3")];
             score = 0
             scoreCounter.innerHTML = score
             gameStarted = true

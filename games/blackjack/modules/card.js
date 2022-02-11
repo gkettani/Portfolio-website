@@ -3,7 +3,7 @@ export default class Card{
     {
         this.rank = rank;
         this.suit = suit;
-        this.image = "url( ../img/cards/" + rank + '_' + suit + ".svg)";
+        this.image = "url( /assets/blackjack/img/cards/" + rank + '_' + suit + ".svg)";
         this.visual = document.createElement('div');
         this.visual.classList.add('card');
         this.visual.style.backgroundImage = this.image;
