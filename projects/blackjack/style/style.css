@@ -1,13 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Solway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap');
 
+
+
+:root{
+    --ff-primary: 'Titillium Web', sans-serif;
+    --clr-primary-1: #F2E0D0;
+    --clr-secondary: #f78c84;
+}
+
+body{
+    background-color: var(--clr-primary-1);
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-text-1);
+}
+  
+.main-title{
+    width: 20%;
+    text-align: center;
+    margin: 20px auto;
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    color: #202426;
+}
 .game-board {
-    /* border: 2px solid black; */
+    border: 1px solid rgba(0,0,0,0.19);
     position: relative;
     width: 1280px;
     height: 720px;
     background-image: url("/assets/blackjack/img/Background1.png");
     background-size: 100% 100%;
     margin: 0 auto;
+    border-radius: 7px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.19);
 }
 
 .btn {
@@ -244,3 +272,31 @@
     font-size: 70px;
     color: #edf0e9;
 }
+
+.info-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.info-container__btn{
+    font-family: var(--ff-primary);
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: .2em .3em;
+    margin: 10px 20px;
+    border-color: rgba(0, 0, 0, 0);
+    transition: all .6s;
+    background-color: var(--clr-secondary);
+    border-radius: .3rem;
+    color: var(--clr-primary-1);
+}
+
+.info-container__btn:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--clr-secondary);
+    border: 2px solid var(--clr-secondary);
+    cursor: pointer;
+  }

@@ -9,11 +9,13 @@ document.addEventListener('DOMContentLoaded', () =>{
     let themeStorage = localStorage.getItem('theme');
     let darkTheme = true;
     if (themeStorage != null){
-        setTheme(themeStorage);
+        setTheme(themeStorage); 
     }
     
     // Hero bg parallax
-    if (home != null) {
+    if (home != null) 
+    // Check if we are in the home page
+    {
         window.addEventListener('scroll', ()=> {
             let value = window.scrollY;
             hero_bg.style.bottom = (value*0.4 -150) + 'px'
@@ -22,7 +24,9 @@ document.addEventListener('DOMContentLoaded', () =>{
     
     
     // Projects pages bg parallax 
-    if (projects != null){
+    if (projects != null)
+    // Check if we are the projects' page
+    {
         window.addEventListener('scroll', ()=> {
             let value = window.scrollY;
             project_bg.style.bottom = (value*0.75 - 300) + 'px'
@@ -31,7 +35,8 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     // Theme Handler
 
-    function setTheme(theme){
+    function setTheme(theme)
+    {
         if (theme == 'light') {
             if (home != null){
                 hero_bg.src = "./assets/img/hero_bg_light.svg"
